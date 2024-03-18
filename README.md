@@ -27,8 +27,7 @@ if the decoded result isn't exactly the number represented in the
 encoded form.
 
 
-Format Details
---------------
+## Format Details
 
 The LEB128 format is really quite simple.
 
@@ -99,8 +98,7 @@ c1 57        +2bc1             -143f
 ```
 
 
-Building and Installing
------------------------
+## Building and Installing
 
 ```shell
 npm install leb
@@ -111,8 +109,7 @@ dependencies, so once you have the source, there's nothing more to do
 to "build" it.
 
 
-Testing
--------
+## Testing
 
 ```shell
 npm test
@@ -125,8 +122,7 @@ node ./test/test.js
 ```
 
 
-API Details
------------
+## API Details
 
 
 ### decodeInt32(buffer, [index]) -> { value: num, nextIndex: num }
@@ -211,14 +207,7 @@ Like `encodeInt32`, but with the buffer argument in unsigned bigint form
 and returning unsigned LEB128.
 
 
-To Do
------
-
-* Figure out something to do.
-
-
-Contributing
-------------
+## Contributing
 
 Questions, comments, bug reports, and pull requests are all welcome.
 
@@ -227,8 +216,7 @@ best. Even better, make them in the form of pull requests that update
 the test suite. Thanks!
 
 
-History
--------
+## History
 
 This module was originally written by Dan Bornstein in 2012 and publised to
 `npm`. In 2024, Dan discovered that the original repo had been deleted, so he
