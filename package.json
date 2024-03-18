@@ -1,6 +1,6 @@
 {
   "name": "leb",
-  "version": "0.4.0",
+  "version": "1.0.0",
   "description": "LEB128 utilities for Node",
   "keywords": [
     "leb", "leb128", "uleb128", "int", "uint", "encoding", "decoding", "encode",
