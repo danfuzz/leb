@@ -7,7 +7,9 @@
     "description":
     "LEB128 utilities for Node",
     "homepage": "https://github.com/danfuzz/leb",
-    "repository": "github:danfuzz/leb",
+    "repository": {
+      "url": "git+https://github.com/danfuzz/leb"
+    },
     "license": "Apache-2.0",
     "author": {
       "name": "Dan Bornstein",
