@@ -68,7 +68,7 @@ function trimIntBuffer(buffer) {
     return buffer;
   }
 
-  var newBuf = new Buffer(length);
+  var newBuf = Buffer.alloc(length);
   buffer.copy(newBuf);
   return newBuf;
 }
@@ -91,7 +91,7 @@ function trimUIntBuffer(buffer) {
     return buffer;
   }
 
-  var newBuf = new Buffer(length);
+  var newBuf = Buffer.alloc(length);
   buffer.copy(newBuf);
   return newBuf;
 }
@@ -115,7 +115,7 @@ function trimLebBuffer(buffer) {
     return buffer;
   }
 
-  var newBuf = new Buffer(length);
+  var newBuf = Buffer.alloc(length);
   buffer.copy(newBuf);
   newBuf[length - 1] &= 0x7f;
   return newBuf;
@@ -137,7 +137,7 @@ function trimULebBuffer(buffer) {
     return buffer;
   }
 
-  var newBuf = new Buffer(length);
+  var newBuf = Buffer.alloc(length);
   buffer.copy(newBuf);
   newBuf[length - 1] &= 0x7f;
   return newBuf;
@@ -337,7 +337,7 @@ function testDecodeEncode(buffer) {
  * merely verify a encode-decode or decode-encode cycle).
  */
 function testOneByteEncodings() {
-  var buf = new Buffer(1);
+  var buf = Buffer.alloc(1);
 
   for (var value = 0; value < 127; value++) {
     var asSigned = (value << 25) >> 25; // sign-extend bit #6
@@ -374,7 +374,7 @@ function testOneByteEncodings() {
  * merely verify a encode-decode or decode-encode cycle).
  */
 function testTwoByteEncodings() {
-  var buf = new Buffer(2);
+  var buf = Buffer.alloc(2);
 
   for (var value = 0; value < 16384; value++) {
     var asSigned = (value << 18) >> 18; // sign-extend bit #14
@@ -492,7 +492,7 @@ function testContiguousBits64() {
  */
 function testLossy64() {
   var rand = new Randomish(9140);
-  var buf = new Buffer(8);
+  var buf = Buffer.alloc(8);
 
   for (var bitCount = 54; bitCount < 64; bitCount++) {
     var maxOffset = 64 - bitCount;
@@ -542,7 +542,7 @@ function testBuffers() {
   var rand = new Randomish(999);
 
   for (var length = 1; length < 300; length++) {
-    var buffer = new Buffer(length);
+    var buffer = Buffer.alloc(length);
     for (var i = 0; i < 20; i++) {
       rand.fillBuffer(buffer);
       testEncodeDecode(buffer);
