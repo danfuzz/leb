@@ -13,7 +13,7 @@ but with some cost in terms of the complexity on the read side.
 LEB128 was first defined as part of the
 [DWARF 3 specification](http://dwarfstd.org/Dwarf3Std.php), and it
 is also used in Android's
-[DEX file format](http://http://source.android.com/tech/dalvik/dex-format.html).
+[DEX file format](https://source.android.com/docs/core/runtime/dex-format).
 
 This module provides encoders and decoders for both signed and
 unsigned values, and with the decoded form being any of 32-bit
