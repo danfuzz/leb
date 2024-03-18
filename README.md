@@ -215,15 +215,6 @@ Bug reports that include steps-to-reproduce (including code) are the
 best. Even better, make them in the form of pull requests that update
 the test suite. Thanks!
 
-
-## History
-
-This module was originally written by Dan Bornstein in 2012 and publised to
-`npm`. In 2024, Dan discovered that the original repo had been deleted, so he
-took the module as published and turned it back into a repo in his account. His
-assumption is that, having been deleted by the corporate entity that originally
-funded it, the copyright effectively reverted to him.
-
 - - - - - - - - - -
 ```
 Copyright 2012-2024 the Leb Authors (Dan Bornstein et alia).
