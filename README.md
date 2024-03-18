@@ -4,7 +4,7 @@ leb: LEB128 utilities for Node
 This Node module provides several utility functions for
 dealing with the LEB128 family of integer representation formats.
 
-LEB128, which is short for "Little-Endian Base 128") is somewhat like
+LEB128, which is short for "Little-Endian Base 128", is somewhat like
 UTF-8 in representing numbers using a variable number of bytes. Unlike
 UTF-8, LEB128 uses just the high bit of each byte to determine the
 role of a byte. This makes it a somewhat more compact representation
